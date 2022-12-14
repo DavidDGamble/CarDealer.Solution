@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Car Dealer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body style="background-color: teal">
+  <div class="jumbotron" style="text-align: center">
+    <h1>Delete Car Here</h1>
+  </div>
+  <form action="/cars/delete" method="post">
+    <label for="model">Enter the car make/model you would like to remove:</label>
+    <input id="model" name="model" type="text">
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

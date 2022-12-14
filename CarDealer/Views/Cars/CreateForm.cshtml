@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Car Dealer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body style="background-color: teal">
+  <div class="jumbotron" style="text-align: center">
+      <h1>Add a Car Here</h1>
+    </div>
+  <form action="/cars" method="post">
+    <label for="model">Add a car make/model:</label>
+    <input id="model" name="model" type="text">
+
+    <label for="price">Add car price:</label>
+    <input id="price" name="price" type="text">
+
+    <label for="miles">Add car miles:</label>
+    <input id="miles" name="miles" type="text">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

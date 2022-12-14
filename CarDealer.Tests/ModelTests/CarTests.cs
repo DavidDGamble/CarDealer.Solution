@@ -15,7 +15,7 @@ namespace CarDealer.TestTools
     [TestMethod]
     public void CarConstructor_CreateInstanceOfCar_Type()
     {
-        Car newCar = new Car("test", 1, 1);
+        Car newCar = new Car("test", "1", "1");
         Assert.AreEqual(typeof(Car), newCar.GetType());
     }
 
@@ -23,7 +23,7 @@ namespace CarDealer.TestTools
     public void CarContructor_ReturnsMakeModel_String()
     {
       string model = "crown vic";
-      Car newCar = new Car(model, 1, 1);
+      Car newCar = new Car(model, "1", "1");
       Assert.AreEqual(model, newCar.MakeModel);
     }
 
@@ -31,7 +31,7 @@ namespace CarDealer.TestTools
     public void CarContructor_SetsMakeModel_String()
     {
       string model = "crown vic";
-      Car newCar = new Car(model, 1, 1);
+      Car newCar = new Car(model, "1", "1");
       string updateModel = "escort";
       newCar.MakeModel = updateModel;
       Assert.AreEqual(updateModel, newCar.MakeModel);
@@ -50,11 +50,24 @@ namespace CarDealer.TestTools
     {
       string ford = "ford";
       string lexus = "lexus";
-      Car carOne = new Car(ford, 1, 1);
-      Car carTwo = new Car(lexus, 1, 1);
+      Car carOne = new Car(ford, "1", "1");
+      Car carTwo = new Car(lexus, "1", "1");
       List<Car> lotList = Car.GetLot();
       List<Car> lotListTwo = new List<Car> { carOne, carTwo };
       CollectionAssert.AreEqual(lotListTwo, lotList);
+    }
+
+    [TestMethod]
+    public void RemoveCar_RemovesFromList_List()
+    {
+      string ford = "ford";
+      string lexus = "lexus";
+      Car carOne = new Car(ford, "1", "1");
+      Car carTwo = new Car(lexus, "1", "1");
+      List<Car> lotListTwo = new List<Car> { carTwo };
+      Car.RemoveCar(ford);
+      List<Car> newlist = Car.GetLot();
+      CollectionAssert.AreEqual(lotListTwo, newlist);
     }
   }
 }

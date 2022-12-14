@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Car Dealer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body style="background-color: teal">
+  @using CarDealer.Models;
+  <div class="container">
+    <div class="jumbotron" style="text-align: center">
+      <h1>The Lot Lizard</h1>
+    </div>
+    <div>
+    @if (Model.Count == 0)
+    {
+      <p>There are no cars on the lot.</p>
+    }
+<div class="row">
+    @foreach (Car car in Model)
+    {
+      <ul>
+        <li><strong>@car.MakeModel</strong></li>
+        <p>@car.Miles miles</p>
+        <p>$@car.Price</p>
+      </ul>
+    }
+    </div>
+
+    <a href="/cars/new" style="color: orange;">Add a new car.</a><br>
+    <a href="/cars/delete" style="color: orange;">Remove a car.</a>
+    </div>
+  </div>
+</body>
+
+</html>
