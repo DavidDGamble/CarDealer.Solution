@@ -1,19 +1,8 @@
-## Setup for template
-* _change all appropriate names for ProjectName_
-* _ . - all appropriate files_
-* _ . - ProjectName.Tests.csproj_
-* _ . - Program.cs_
+# _{Car Dealer}_
 
-* _[$ dotnet watch run] to run project in developement mode_
-* _[$ dotnet watch run --launch-profile "production"] to run project in production mode._
+#### By: _**David Gamble & Chris Loveless**_
 
-## FOR GH-PAGES
-
-# _{Application Name}_
-
-#### By: _**David Gamble**_
-
-#### _{Brief description of application}_
+#### _This app allows users to add and view cars that are for sale._
 
 ## Technologies Used
 
@@ -24,23 +13,20 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This app allows users to view a list of cars for sale at the Lot Lizard as well as add and remove cars._
 
 ## Setup/Installation Requirements
 
-* _Clone the repository to your desktop from: {Enter the repository url here}_
-* _Run [$ dotnet run] in the {ProjectName} repository in {ProjectName.Solutions}_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Clone the repository to your desktop from: {https://github.com/DavidDGamble/CarDealer.Solution.git}_
+* _Run [$ dotnet run] in the {CarDealer} repository in {CarDealer.Solutions}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _If you enter a car that does not exist or leave the input empty when deleting a car the app crashes._
 
 ## License
 
-_Copyright (c) 2022 David Gamble_
+_Copyright (c) 2022 David Gamble & Chris Loveless_
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 

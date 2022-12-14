@@ -9,15 +9,19 @@
 </head>
 
 <body style="background-color: teal">
-  <div class="jumbotron" style="text-align: center">
-    <h1>Delete Car Here</h1>
-  </div>
-  <form action="/cars/delete" method="post">
-    <label for="model">Enter the car make/model you would like to remove:</label>
-    <input id="model" name="model" type="text">
+  <div class="container">
+    <div class="jumbotron" style="text-align: center">
+      <h1>Delete Car</h1>
+    </div>
+    <div style="text-align: center;">
+      <form action="/cars/delete" method="post">
+        <label for="model">Enter the car make/model you would like to remove:</label>
+        <input id="model" name="model" type="text">
 
-    <button type="submit">Submit</button>
-  </form>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
